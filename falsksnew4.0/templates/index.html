@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>w的小站</title>
+  <link rel="icon" href="bitbug_favicon.ico" type="image/x-icon" />
+  <!--  js-->
+  <script >
+    alert("pc无法体验全部功能，建议使用电脑端进入！")
+    
+    </script>
+  <!-- js -->
+  <link rel="stylesheet" href="static/layui/css/layui.css">
+  
+  <script src="static/layui/layui.js"></script>
+</head>
+<body>
+<div class="layui-layout layui-layout-admin">
+  <div class="layui-header">
+    <div class="layui-logo layui-hide-xs layui-bg-black">w的小站</div>
+    <!-- 头部区域（可配合layui 已有的水平导航） -->
+    <ul class="layui-nav layui-layout-left">
+      <!-- 移动端显示 -->
+      <li class="layui-nav-item layui-show-xs-inline-block layui-hide-sm" lay-header-event="menuLeft">
+        <i class="layui-icon layui-icon-spread-left"></i>
+      </li>
+      
+      <li class="layui-nav-item layui-hide-xs"><a href="{{url_for("gjx")}}">工具库</a></li>
+      <li class="layui-nav-item layui-hide-xs"><a href="{{url_for("four")}}">资料库</a></li>
+      <li class="layui-nav-item layui-hide-xs"><a href="{{url_for("four")}}">网络安全</a></li>
+      <li class="layui-nav-item">
+        <a href="javascript:;">其他</a>
+        <dl class="layui-nav-child">
+          <dd><a href="https://space.bilibili.com/351762392">b站</a></dd>
+          <dd><a href="https://blog.csdn.net/qq_61026911?spm=1000.2115.3001.5343">CSDN</a></dd>
+          <dd><a href="https://github.com/wq2481">GITHUB</a></dd>
+        </dl>
+      </li>
+    </ul>
+    <ul class="layui-nav layui-layout-right">
+      <li class="layui-nav-item layui-hide layui-show-md-inline-block">
+        <a href="javascript:;">
+          <img src="static\img\123.jpg" class="layui-nav-img">
+          拒绝内卷
+        </a>
+        <dl class="layui-nav-child">
+          <dd><a href="{{url_for("daima")}}">个人资料</a></dd>
+          <dd><a href="{{url_for("js")}}">网站资料</a></dd>
+          <dd><a href="{{url_for('rizhi')}}">日志</a></dd>
+        </dl>
+      </li>
+      <li class="layui-nav-item" lay-header-event="menuRight" lay-unselect>
+        <a href="javascript:;">
+          <i class="layui-icon layui-icon-more-vertical"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <script src="static/layui/layui.js"></script>
+  <div class="layui-side layui-bg-black">
+    <div class="layui-side-scroll">
+      <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+      <ul class="layui-nav layui-nav-tree" lay-filter="test">
+        <li class="layui-nav-item layui-nav-itemed">
+          <a class="" href="javascript:;">计算机</a>
+          <dl class="layui-nav-child">
+            <dd><a >PYTHON</a>
+              <dl class="layui-nav-child">
+                <dd><a href="{{url_for("tests")}}">爬虫测试</a>
+              </dl>
+            </dd>
+            <dd><a href="{{url_for("four")}}">C#</a></dd>
+            <dd><a href="{{url_for("four")}}">JAVA</a></dd>
+            <dd><a href="">WEB</a></dd>
+          </dl>
+        </li>
+        <li class="layui-nav-item">
+          <a href="javascript:;">单片机</a>
+          <dl class="layui-nav-child">
+            <dd><a href="{{url_for("four")}}">51单片机</a></dd>
+            <dd><a href="{{url_for("four")}}">32单片机</a></dd>
+            <dd><a href="">PCB</a></dd>
+          </dl>
+        </li>
+        <li class="layui-nav-item"><a href="https://wq2481.github.io/myweb.github.io/">更多</a></li>
+        <li class="layui-nav-item"><a href="{{url_for("zz")}}">资助/广子</a></li>
+        <li class="layui-nav-item"><a href="{{url_for("jtcsmh")}}">今天吃什么</a></li>
+        <li class="layui-nav-item"><a href="{{url_for("new")}}">点击评论</a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="layui-body">
+    <!-- 内容主体区域 -->
+    <div class="layui-carousel" id="test1">
+      <div carousel-item>
+        <div style="background-color:#44cef6;"><p style="text-align:center;padding: 200px;color:azure;font-size:20px">本网站采用layui组件库</p></div>
+        <a href="https://color.uisdc.com/"><div style="background-color:#ff2d51;"><p style="text-align:center;padding: 200px;color:azure;font-size:20px">本网站配色采用的中国传统颜色库</p></div></a> 
+        <a href="https://www.w3school.com.cn/w3c/w3c_china.asp"><div style="background-color:#ffc773;"><p style="text-align:center;padding: 200px;color:azure;font-size:20px">本网站使用HTML+CSS+JS(w3c)</p></div></a> 
+       <a href="https://github.com/wq2481"><div style="background-color:#96ce54;"><p style="text-align:center;padding: 200px;color:azure;font-size:20px">GitHub</p></div></a> 
+        <div style="background-color:#a1afc9;"><p style="text-align:center;color:azure;font-size:20px"><img src="static\img\付款码.jpg" alt=""width="30%"height="350px"margin-left="50px"></p>给站主扫钱</div>
+        
+      </div>
+    </div>
+    <!-- 条目中可以是任意内容，如：<img src=""> -->
+     
+   
+    <script>
+    layui.use('carousel', function(){
+      var carousel = layui.carousel;
+      //建造实例
+      carousel.render({
+        elem: '#test1'
+        ,width: '100%' //设置容器宽度
+        ,arrow: 'always' //始终显示箭头
+        //,anim: 'updown' //切换动画方式
+        ,autoplay:true
+      });
+    });
+    </script>
+<h1 style='text-align: center;'>评论</h1>
+    {% for post in posts %}
+    <div class="layui-card" style="border: #00e09e;border-style:solid">
+      <div class="layui-card-header">ID:{{ post['title'] }}</div>
+      <div class="layui-card-header">{{ post['created'] }}</div>
+      <div class="layui-card-body">
+        评论:{{ post['content'] }}
+      </div>
+    </div>
+    {% endfor %}
+    <div class="gg_zuo" style="position:fixed;top:30%;left:0;">
+      <a href="#"><img src="static\img\付款码.jpg" width="120" height="360"></a>
+      </div>
+    
+
+<br>
+<br>
+    <!-- 轮播 -->
+    <!-- <div style="padding: 15px;text-align: center;font-size: larger;">近期公告</div>
+    
+    <ul class="layui-timeline">
+      <li class="layui-timeline-item">
+        <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+        <div class="layui-timeline-content layui-text">
+          <h3 class="layui-timeline-title">8月18日</h3>
+          <p>
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            <br>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            <br>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx <i class="layui-icon"></i>
+          </p>
+        </div>
+      </li>
+      <li class="layui-timeline-item">
+        <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+        <div class="layui-timeline-content layui-text">
+          <h3 class="layui-timeline-title">8月16日</h3>
+          <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            <br> xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx<br>
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+          <ul>
+            <li>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</li>
+            <li>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</li>
+          </ul>
+        </div>
+      </li>
+      <li class="layui-timeline-item">
+        <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+        <div class="layui-timeline-content layui-text">
+          <h3 class="layui-timeline-title">8月15日</h3>
+          <p>
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            <br>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            <br>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            <br>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            <br>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+          </p>
+        </div>
+      </li>
+      <li class="layui-timeline-item">
+        <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+        <div class="layui-timeline-content layui-text">
+          <div class="layui-timeline-title">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</div>
+          <br>
+          <br>
+      </li>
+    </ul> -->
+  </div>
+  
+  <div class="layui-footer">
+    <!-- 底部固定区域 -->
+    联系方式：wq543477641@gmail
+  </div>
+</div>
+<script src="static/layui/layui.js"></script>
+<script>
+//JS 
+layui.use(['element', 'layer', 'util'], function(){
+  var element = layui.element
+  ,layer = layui.layer
+  ,util = layui.util
+  ,$ = layui.$;
+  
+  //头部事件
+  util.event('lay-header-event', {
+    //左侧菜单事件
+    menuLeft: function(othis){
+      layer.msg('该功能不支持pc端', {icon: 0});
+    }
+    ,menuRight: function(){
+      layer.open({
+        type: 1
+        ,content: '<div style="padding: 15px;">不可以内卷哦</div>'
+        ,area: ['260px', '100%']
+        ,offset: 'rt' //右上角
+        ,anim: 5
+        ,shadeClose: true
+      });
+    }
+  });
+  
+});
+
+</script>
+
+</body>
+</html>
